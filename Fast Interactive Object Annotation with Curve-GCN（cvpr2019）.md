@@ -6,11 +6,9 @@
 
 ### 问题和目的：人类给目标实例分割的标注是非常耗时耗力的，希望通过网络的方式来标注或辅助标注。
 
-![image-20191202165049475](/home/chenshen/.config/Typora/typora-user-images/image-20191202165049475.png)
+![image-20191202165049475](images/image-20191202165049475.png)
 
 <center>图1 用少量点击可以生成完全的轮廓</center>
-
-
 
 ### Related Work
 
@@ -21,21 +19,20 @@
 
 ### Method
 
-![image-20191202194738598](/home/chenshen/.config/Typora/typora-user-images/image-20191202194738598.png)
+![image-20191202194738598](images/image-20191202194738598.png)
 
 <center>图2 框架图</center>
-
 ### Loss
 
-**Point Matching Loss** ![image-20191202200525589](/home/chenshen/.config/Typora/typora-user-images/image-20191202200525589.png)
+**Point Matching Loss** ![image-20191202200525589](images/image-20191202200525589.png)
 
 这个损失可以保证预测点的顺序
 
-**Differentiable Accuracy Loss** ![image-20191202201400952](/home/chenshen/.config/Typora/typora-user-images/image-20191202201400952.png)
+**Differentiable Accuracy Loss** ![image-20191202201400952](images/image-20191202201400952.png)
 
 M表示的是mask，得到mask的方式如下
 
-<img src="/home/chenshen/.config/Typora/typora-user-images/image-20191202202327843.png" alt="image-20191202202327843" style="zoom:%;" />
+<img src="images/image-20191202202327843.png" alt="image-20191202202327843" style="zoom:%;" />
 
 ### Experiment
 
